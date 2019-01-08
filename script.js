@@ -1,4 +1,7 @@
 window.addEventListener("load", sidenVises);
+//DomReady.ready(function () {
+//    alert('dom is ready');
+//});
 
 function sidenVises() {
     console.log("siden vises");
