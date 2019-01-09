@@ -1,6 +1,7 @@
 body {
     background-color: whitesmoke;
     margin: 0;
+
 }
 
 
@@ -151,19 +152,6 @@ header nav a:hover {
 /*FORSIDE STARTER -----------------------*/
 
 
-.forside {
-    display: flex;
-    justify-content: space-between;
-}
-
-.forside div {
-    flex-basis: 200px;
-    flex-grow: 1;
-
-    border: 1px solid white;
-
-}
-
 #forside {
     max-width: none;
     padding-top: 100px;
@@ -172,38 +160,6 @@ header nav a:hover {
     color: black;
 
 }
-
-/*
-
-.koer_bil {
-    animation-name: koer_bil;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-    transform-origin: top left;
-    animation-timing-function: linear;
-
-}
-
-@keyframes koer_bil {
-    0% {
-        transform: translateY(0vw) scale(1)
-    }
-
-    100% {
-        transform: translateY(-15vw) scale(0);
-    }
-}
-*/
-
-/*
-
-}
-
-.hide {
-    display: none;
-}
-*/
 
 .fade_in {
     animation-name: fade_in_kf;
@@ -390,76 +346,11 @@ header nav a:hover {
     margin-top: 25px;
 }
 
-/*OM MIG ANIMATION*/
-
-.om_mig {
-    display: flex;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 2.5rem;
-    color: #999;
-    justify-content: center;
-    padding: 20px;
-}
-
-.om_mig p {
-    height: 20px;
-    float: left;
-    margin-right: 50px;
-    font-size: 1.4rem;
-    position: relative;
-    bottom: 10px;
-}
-
-.om_mig b {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    height: 50px;
-    top: 0;
-}
-
-.om_mig .inner_om_mig {
-    display: inline-block;
-    color: #202334;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-
-
-    /*animation*/
-    animation: move 25s;
-    /*animation-iteration-count*/
-    animation-iteration-count: infinite;
-    /*animation-delay*/
-    animation-delay: 1s;
-}
-
-@keyframes move {
-    0% {
-        top: 0px;
-    }
-
-    20% {
-        top: -50px;
-    }
-
-    40% {
-        top: -100px;
-    }
-
-    60% {
-        top: -150px;
-    }
-
-    80% {
-        top: -200px;
-    }
-}
-
 
 
 /*OM SEKTION SLUTTER ----------------------------*/
+
+
 
 #eksempler .column {
 
@@ -492,18 +383,48 @@ header nav a:hover {
 
 /*SKRIFT STARTER ------------------------*/
 
+/*
+
+.koer_bil {
+    animation-name: koer_bil;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    transform-origin: top left;
+    animation-timing-function: linear;
+
+}
+
+@keyframes koer_bil {
+    0% {
+        transform: translateY(0vw) scale(1)
+    }
+
+    100% {
+        transform: translateY(-15vw) scale(0);
+    }
+}
+*/
+
+
+
+.hide {
+    display: none;
+}
+
+
 h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 4rem;
     text-align: center;
     color: #5ec7c7;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h2,
 h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 
 }
 
@@ -596,7 +517,7 @@ p {
 .element {
     position: absolute;
     opacity: 0;
-    padding: 100px;
+    padding: 50px;
     background: #202334;
     transition: 0.3s ease-in-out all;
     color: white;
@@ -744,6 +665,24 @@ p {
     margin-top: 25px;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
 #project .column {
 
     flex-grow: 2;
@@ -755,6 +694,7 @@ p {
     max-width: 100%;
     padding-top: 100px;
 }
+
 
 #project h2,
 #project h3,
@@ -786,39 +726,39 @@ p {
 
 /*BAGGRUNDE ----------*/
 
-#project .baggrund1 {
+#number1 {
     background-color: white;
 }
 
-#project .baggrund2 {
+#number2 {
     background-color: #dae2ea;
 }
 
-#project .baggrund3 {
+#number3 {
     background-color: #c2c7d4;
 }
 
-#project .baggrund4 {
+#number4 {
     background-color: #e3edf4;
 }
 
-#project .baggrund5 {
+#number5 {
     background-color: #91afc1;
 }
 
-#project .baggrund6 {
+#number6 {
     background-color: #758396;
 }
 
-#project .baggrund7 {
+#number7 {
     background-color: #9a9ca3;
 }
 
-#project .baggrund8 {
+#number8 {
     background-color: #c4cbd3;
 }
 
 
-#project .baggrund9 {
+#number9 {
     background-color: #879fb4;
 }

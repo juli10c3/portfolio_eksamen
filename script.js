@@ -7,6 +7,7 @@ function sidenVises() {
     console.log("siden vises");
     //registrer klik på menu-knap
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
 }
 
 function toggleMenu() {
@@ -23,3 +24,6 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "X";
     }
 }
+
+
+
